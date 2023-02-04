@@ -33,8 +33,8 @@ public class Program {
 		System.out.print("How many contracts to this worker? ");
 		int n = sc.nextInt();
 		
-		for (int i=1; i<=n; i++) {
-			System.out.println("Enter contract #" + i + " data:");
+		for (int i=0; i<=n; i++) {  // colocar "0" na variavel i, pois está dando erro. 
+			System.out.println("Enter contract #" + i + 1 + " data:");
 			System.out.print("Date (DD/MM/YYYY): ");
 			Date contractDate = sdf.parse(sc.next());
 			System.out.print("Value per hour: ");
